@@ -1,0 +1,33 @@
+{% extends 'basic.html' %}
+{% load static %}
+{% block css %}
+.main{
+background: linear-gradient(110deg, #fdcd3b 60%, #ffed4b 60%);
+height:100%;
+}
+h1{
+padding-top:7rem;
+}
+{% endblock %}
+{% block title %}My Contact{% endblock %}
+{% block content %}
+<div class="main">
+    <h1 class="text-center" style="font-family: 'Baloo Da 2', cursive;">ABOUT US</h1>
+    <div class="card mx-auto mt-3" style="width: 98vw;border-radius: 66px;">
+        <div class="card-body text-center">
+            <img src="{% static 'an2.jpg' %}" class="card-img-top" alt="..." style="width: 13rem;">
+            <h5 class="card-title mt-4"><strong>My Name: </strong>Ananya Sharma</h5>
+            <h5 class="card-title mt-4"><strong>My Age: </strong>13+</h5>
+            <h5 class="card-title mt-4"><strong>My City: </strong>New Delhi</h5>
+            <h5 class="card-title mt-4"><strong>My Height: </strong>5' 6'' (5 FOOT 6 INCHES)</h5>
+            <h5 class="card-title mt-4"><strong>My Weight: </strong>50kg</h5>
+            <h5 class="card-title mt-4"><strong>My Waist: </strong>29 inches</h5>
+            <h5 class="card-title mt-4"><strong>My Skin Color: </strong>Fair</h5>
+            <h5 class="card-title mt-4"><strong>My Email ids: </strong>dksmda111@gmail.com , dks_adarsh@rediff.com</h5>
+            <p class="card-text" style="font-family: 'Baloo Da 2', cursive;">Some quick example text to build on the card title and make up the bulk of the card's
+                content Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit culpa, esse possimus molestias, voluptatum quae omnis harum ex obcaecati quo neque vitae facilis necessitatibus qui sint veniam, saepe cupiditate aliquid.</p>
+            <a href="https://www.youtube.com/channel/UC0Ld6EqhdyQ3xiEtg1fKQXg?view_as=subscriber" class="card-link">My Youtube Channel</a>
+        </div>
+    </div>
+</div>
+{% endblock %}
